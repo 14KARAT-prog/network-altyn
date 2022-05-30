@@ -16,7 +16,7 @@ const Navbar = () => {
 	return (
 		<nav className={style['nav-link']}>
 			<ul onClick={(event) => handleClick(event)}>
-				<li><Link className={style.active} to={"/profile"}>Профиль</Link></li>
+				<li><Link  to={"/profile"}>Профиль</Link></li>
 				<li><Link  to={"/dialogs"}>Диалоги</Link></li>
 				<li><Link  to={"/news"}>Новости</Link></li>
 				<li><Link  to={"/music"}>Музыка</Link></li>
