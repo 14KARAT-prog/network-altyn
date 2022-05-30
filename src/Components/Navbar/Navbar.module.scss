@@ -1,0 +1,16 @@
+.nav-link {
+  padding: 10px;
+  ul {
+    list-style-type: none;
+    line-height: 30px;
+  }
+  a {
+    transition: color 1s ease;
+  }
+  a.active {
+    color: #4682B4;
+  }
+  a:hover {
+    color: #4682B4;
+  }
+}
