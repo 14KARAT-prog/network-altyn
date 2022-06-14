@@ -1,7 +1,9 @@
 .dialogs {
   display: grid;
   grid-template-columns: 2fr 10fr;
+  gap: 30px;
   padding: 15px;
+  margin: 0;
   ul {
     list-style-type: none;
     line-height: 30px;
@@ -9,9 +11,10 @@
 }
 
 h2 {
-  color: #4682B4;
+  color: #ffffff;
+  padding: 15px;
 }
 
 .active {
-  color: #4682B4;
+  color: #ffffff;
 }

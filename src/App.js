@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import { Route, Routes } from "react-router-dom";
+import state from './redux/state.js';
 
 import Dialogs from "./Components/Dialogs/Dialogs";
 import Header from "./Components/Header/Header";
@@ -15,11 +16,11 @@ function App() {
   return (
       <div className="App">
           <Header/>
-          <Navbar/>
+          <Navbar navLink={state.navLink}/>
           <main>
               <Routes>
-                  <Route path={'/profile'} element={<Content />}/>
-                  <Route path={'/dialogs'} element={<Dialogs />}/>
+                  <Route path={'/profile'} element={<Content postsData={state.posts} />}/>
+                  <Route path={'/dialogs'} element={<Dialogs dialogsData={state.dialogs} messagesData={state.messages} />}/>
                   <Route path={'/news'} element={<News />}/>
                   <Route path={'/music'} element={<Music />}/>
                   <Route path={'/settings'} element={<Settings />}/>

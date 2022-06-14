@@ -1,8 +1,11 @@
 import React from "react";
+import style from './MessageItem.module.scss';
 
 const MessageItem = ({ messageText }) => {
 	return (
-		<li>{messageText}</li>
+		<li className={style.message}>
+			{messageText}
+		</li>
 	)
 }
 
