@@ -1,9 +1,13 @@
-.App {
+#root {
   max-width: 1600px;
   margin: 0 auto;
+}
 
+.App {
+  background-color: #87CEFA;
   display: grid;
   grid-template-areas:"head head head" "nav main main" "nav main main" ;
+  box-shadow: 0 0 20px 0 #949494;
 }
 
 header {
@@ -13,12 +17,12 @@ header {
 
 nav {
   grid-area: nav;
-  background-color: #B0C4DE;
+  background-color: #00BFFF;
 }
 
 main {
   grid-area: main;
-  background-color: #B0C4DE;
+  background-color: #00BFFF;
 }
 
 main > * + * {
